@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { NavController } from 'ionic-angular'
 
 @Component({
   selector: 'app-menuprincipal',
@@ -9,12 +10,12 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class MenuprincipalPage implements OnInit {
 
-  form = new FormGroup({
-    voltaje: new FormControl('',[Validators.required]),
-    amperaje: new FormControl('',[Validators.required]),
-    consumo_KWH: new FormControl('',[Validators.required])
-  })
+  constructor(public navCtrl: NavController){
 
+  }
+  Ir_menu_artefactos(){
+  this.navCtrl.push()
+  }
   constructor() { }
 
   ngOnInit() {
