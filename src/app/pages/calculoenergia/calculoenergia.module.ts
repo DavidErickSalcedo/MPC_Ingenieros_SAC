@@ -6,17 +6,33 @@ import { IonicModule } from '@ionic/angular';
 
 import { CalculoenergiaPageRoutingModule } from './calculoenergia-routing.module';
 
-import { CalculoenergiaPage } from './calculoenergia.page';
+import { Calculoenergia } from './calculoenergia';
 import { SharedModule } from 'src/app/shared/shared.module';
 
+import { NgModule } from '@angular/core';
+import { IonicPageModule } from 'ionic-angular';
+
 @NgModule({
+declarations: [
+calculoenergia,
+],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     CalculoenergiaPageRoutingModule,
-    SharedModule
+    SharedModule,
+    [
+    IonicPageModule.forChild(Calculoenergia)
+    ]
   ],
-  declarations: [CalculoenergiaPage]
+  exports: [
+  Calculoenergia
+           ]
 })
-export class CalculoenergiaPageModule {}
+export class CalculoenergiaModule {}
+
+
+
+
+
