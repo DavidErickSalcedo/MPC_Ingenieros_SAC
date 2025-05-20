@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { CalculoenergiaPage } from './calculoenergia.page';
+import { calculoenergiapage } from './calculoenergia.page';
 
 describe('CalculoenergiaPage', () => {
-  let component: CalculoenergiaPage;
-  let fixture: ComponentFixture<CalculoenergiaPage>;
+  let component: calculoenergiapage;
+  let fixture: ComponentFixture<calculoenergiapage>;
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CalculoenergiaPage);
+    fixture = TestBed.createComponent(calculoenergiapage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

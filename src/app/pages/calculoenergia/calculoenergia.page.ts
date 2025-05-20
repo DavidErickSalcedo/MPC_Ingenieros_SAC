@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { NavController, IonicPage, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from '@ionic/angular';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-calculoenergia',
@@ -8,19 +9,14 @@ import { NavController, IonicPage, NavParams } from 'ionic-angular';
   styleUrls: ['./calculoenergia.page.scss'],
   standalone: false
 })
-export class Calculoenergia implements OnInit {
+export class calculoenergiapage implements OnInit {
 
-  constructor(public navCtrl: NavController, public navParams: navParams){
-
-  }
-  ionViewDidLoad(){
-  console.log('ionViewDidLoad calculoenergia');
-  }
-  Ir_menu_calculoenergia(){
-  this.navCtrl.push()
+  constructor(private router: Router){
   }
 
-  constructor() { }
+  ir_menu_artefactos() {
+    this.router.navigate(['calculoenergia']);
+  }
 
   ngOnInit() {
   }

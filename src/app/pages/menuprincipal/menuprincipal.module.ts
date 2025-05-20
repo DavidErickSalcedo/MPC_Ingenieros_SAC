@@ -16,7 +16,6 @@ import { SharedModule } from 'src/app/shared/shared.module';
     IonicModule,
     MenuprincipalPageRoutingModule,
     SharedModule
-  ],
-  declarations: [MenuprincipalPage]
+  ]
 })
 export class MenuprincipalPageModule {}

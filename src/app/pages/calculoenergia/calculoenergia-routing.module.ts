@@ -1,26 +1,23 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { IonicPageModule } from 'ionic-angular';
-import { CalculoenergiaPage } from './calculoenergia.page';
+import { IonicModule } from '@ionic/angular';
+import { calculoenergiapage } from './calculoenergia.page';
+import { MenuprincipalPage } from '../menuprincipal/menuprincipal.page';
 
 const routes: Routes = [
+
   {
-    path: '',
-    component: CalculoenergiaPage
+    path: 'calculoenergiapageModule',
+    loadChildren: () => import('./calculoenergia.module').then(m => m.calculoenergiapageModule)
   }
 ];
 
 @NgModule({
-  declarations: [
-  calculoenergia,
-  ],
-  imports: [
-           IonicPageModule.forChild(calculoenergia),
-           ],[RouterModule.forChild(routes)],
-  exports: [RouterModule],[menu_artefactos
-           ]
+
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
 })
-export class CalculoenergiaPageRoutingModule {}
+export class calculoenergiapageRoutingModule {}
 
 
 

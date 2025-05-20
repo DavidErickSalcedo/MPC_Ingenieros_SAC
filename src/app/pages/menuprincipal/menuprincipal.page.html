@@ -1,17 +1,33 @@
-<app-header title="Menu principal"></app-header>
-
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Menu Principal</ion-title>
+  </ion-toolbar>
+</ion-header>
 <ion-content class="ion-padding">
-  <h2 class="titulo" >Seleccione La Operacion Que Desea Realizar</h2>
-  <button ion-button block (click)="Ir_menu_artefactos()">
-    Calcular Consumo de Energia
-  </button>
-  <button ion-button block (click)="Ir_menu_2()">
-    Modulo 2
-  </button>
-  <button ion-button block (click)="Ir_menu_3()">
-    Modulo 3
-  </button>
-
-
-
+  <h3 class="titulo">Seleccione La Operacion Que Desea Realizar</h3>
+  <div>
+    <ion-button size="large" expand="block" [routerLink]="['/calculoenergia']">
+      Calcular Consumo de Energia en Artefactos
+    </ion-button>
+  </div>
+  <div>
+    <ion-button size="large" expand="block">
+      Modulo 2: Cables
+    </ion-button>
+  </div>
+  <div>
+    <ion-button size="large" expand="block">
+      Modulo 3: Llaves
+    </ion-button>
+  </div>
+  <div>
+    <ion-button size="large" expand="block">
+      Modulo 4: Por Asignar
+    </ion-button>
+  </div>
+  <div>
+    <ion-button size="large" expand="block">
+      Modulo 5: Por Asignar
+    </ion-button>
+  </div>
 </ion-content>
